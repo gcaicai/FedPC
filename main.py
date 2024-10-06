@@ -137,7 +137,6 @@ if __name__ == '__main__':
 
     parser.add_argument('--model', default='TransE', choices=['TransE', 'RotatE', 'DistMult', 'ComplEx'])
 
-    # one task hyperparam
     parser.add_argument('--one_client_idx', default=0, type=int)
     parser.add_argument('--max_epoch', default=10000, type=int)
     parser.add_argument('--log_per_epoch', default=1, type=int)
@@ -148,7 +147,6 @@ if __name__ == '__main__':
     parser.add_argument('--num_neg', default=256, type=int)
     parser.add_argument('--lr', default=0.001, type=int)
 
-    # for FedE
     parser.add_argument('--num_client', default=3, type=int)
     parser.add_argument('--max_round', default=10000, type=int)
     parser.add_argument('--local_epoch', default=3, type=int)
